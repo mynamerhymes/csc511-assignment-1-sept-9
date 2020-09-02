@@ -1,7 +1,7 @@
 # assignment-1-final
 
 This README outlines the details of collaborating on this Ember application.
-A short introduction of this app could easily go here.
+This app shows the date and time of New York and Nigeria.
 
 ## Prerequisites
 
