@@ -1,0 +1,18 @@
+<h1>Time In U.S.</h1>
+{{#if dateTime}}
+    <h1>{{dateTime.month}}/{{dateTime.day}}/{{dateTime.year}}</h1>
+    <p>{{dateTime.hours}}:{{dateTime.minutes}}:{{dateTime.seconds}}.{{dateTime.mSeconds}}</p>
+    
+{{/if}}
+
+{{#if dateTimeItaly}}
+<h1>Time In Italy</h1>
+<h1>{{dateTimeItaly.month}}/{{dateTimeItaly.day}}/{{dateTimeItaly.year}}</h1>
+<p>{{dateTimeItaly.hours}}:{{dateTimeItaly.minutes}}:{{dateTimeItaly.seconds}}.{{dateTimeItaly.mSeconds}}</p>
+{{/if}}
+
+<p>Refresh Times</p>
+<button onclick={{action setDateTime}}>New Time</button>
+
+
+
