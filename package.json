@@ -56,5 +56,8 @@
   },
   "ember": {
     "edition": "octane"
+  },
+  "dependencies": {
+    "countries-and-timezones": "^2.3.1"
   }
 }
