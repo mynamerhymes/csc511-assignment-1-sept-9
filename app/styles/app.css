@@ -1,0 +1,25 @@
+address{
+    font-size: large;
+    font-weight: bold;
+}
+
+body{
+    background-image: url(https://free4kwallpapers.com/uploads/originals/2015/11/03/a-beautiful-sunny-day-wallpaper.jpg);
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+.center{
+    text-align: center;
+}
+
+.main{
+    background:rgb(255, 255, 255, .5);
+    border-radius: 10px;
+    width: 40%;
+    padding: 20px;
+    margin: auto;
+}
