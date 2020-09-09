@@ -18,32 +18,17 @@ export default class TimerTrackerComponent extends Component {
     }
 
     loadTime(){
-        let timeNow = new Date();
-        let hours = timeNow.getHours();
-        let min = timeNow.getMinutes();
-        let sec = timeNow.getSeconds();
-        let ms = timeNow.getMilliseconds();
-        let PM = 'PM';
-        if(hours > 12){
-            hours -= 12;
-        }
-        if(min < 10){
-            min = "0" + min;
-        }
-        if(sec < 10){
-            sec = "0" + sec;
-        }
+        let time = new Date().toLocaleTimeString();
+        let timeNow = time.split(" ");
+        let ms = new Date().getMilliseconds();
         if(ms < 100){
             if(ms < 10){
                 ms = "00" + ms;
             }
             else
             ms = "0" + ms;
-        }
-        if(hours < 12){
-            PM = 'AM';
-        }
-        this.myTime = hours + ":" + min + ":" + sec + ":" + ms + " " + PM;
+        }             
+        this.myTime = timeNow[0] + ":" + ms + " " + timeNow[1];
         setInterval(() => {this.loadTime();}, 1000);
     }
 
@@ -59,32 +44,19 @@ export default class TimerTrackerComponent extends Component {
         });
     }
     loadDiffTime(){
-        let timeNow = new Date();
-        let hours = timeNow.getUTCHours()+9;
-        let min = timeNow.getMinutes();
-        let sec = timeNow.getSeconds();
-        let ms = timeNow.getMilliseconds();
-        let PM = 'PM';
-        if(hours < 12){
-            PM = 'AM';
-        }
-        if(hours > 12){
-            hours -= 12;
-        }
-        if(min < 10){
-            min = "0" + min;
-        }
-        if(sec < 10){
-            sec = "0" + sec;
-        }
+        let tz = new Date().toLocaleTimeString('en-us', {
+            timeZone: "Asia/Tokyo"
+        });
+        let timeNow = tz.split(" ");
+        let ms = new Date().getMilliseconds();
         if(ms < 100){
             if(ms < 10){
                 ms = "00" + ms;
             }
             else
             ms = "0" + ms;
-        }      
-        this.diffTime = hours + ":" + min + ":" + sec + ":" + ms + " " + PM;
+        } 
+        this.diffTime = timeNow[0] + ":" + ms + " " + timeNow[1];
         setInterval(() => {this.loadDiffTime();}, 1000);
     }
 
