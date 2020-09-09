@@ -1,0 +1,20 @@
+<div class='dateAndTime'>
+    <div class='header'>
+        <h1>Assignment 1 - My First Glimmer App</h1>
+        <h1>Victoria Fischer</h1>
+    </div>
+
+    <h3>Current Date:</h3>
+    <p class='color-white'>{{month}}/{{day}}/{{year}}</p>
+
+    <h3>Current Local Time:</h3>
+    <p class='color-white'>{{hour}}h:{{minute}}m:{{seconds}}s:{{ms}}ms</p>
+
+    <h3>Current Time in Italy: </h3>
+    <p class='color-white'>{{tz}}</p>
+    <h5>*Italy only has 1 timezone.</h5>
+
+    <br>
+    <button class='refresh' onclick={{action refresh}}>Refresh Time</button>
+
+</div>
