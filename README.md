@@ -1,7 +1,6 @@
 # assignment-1-final
 
-This README outlines the details of collaborating on this Ember application.
-A short introduction of this app could easily go here.
+For this project, I added a background to the website and included a border in the middle with the content on it. The page shows a welcome message and displays the current location, its date and time(including milliseconds). Below it is a different address with their respective date and time. I included a refresh button to refresh the date and time for both locations when clicked and there's a counter to keep track of how many times it was clicked.
 
 ## Prerequisites
 
