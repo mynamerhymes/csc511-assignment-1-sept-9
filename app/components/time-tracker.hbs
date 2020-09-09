@@ -1,0 +1,7 @@
+<div class="time">
+    <h1>{{if @tzone @tzone "America/New_York"}}</h1>
+    <div class="clock">
+        <strong>{{time}}</strong>
+    </div>
+    <button onclick={{action refresh}}>Refresh</button>
+</div>

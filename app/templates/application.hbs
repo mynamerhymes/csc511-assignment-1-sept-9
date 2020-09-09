@@ -1,5 +1,6 @@
-{{!-- The following component displays Ember's default welcome message. --}}
-<WelcomePage />
-{{!-- Feel free to remove this! --}}
-
-{{outlet}}
+<div>
+    <TimeTracker />
+    <TimeTracker @tzone="America/Los_Angeles"/>
+    <TimeTracker @tzone="Europe/London"/>
+    <TimeTracker @tzone="Asia/Tokyo"/>
+</div>

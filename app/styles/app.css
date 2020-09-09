@@ -1,0 +1,29 @@
+* {
+    color: white;
+  }
+  h1{
+    margin:10px;
+  }
+  .time {
+    text-align: center;
+    background-color: #6495ED;
+    margin: auto;
+    margin-bottom: .5cm;    
+    border-radius: 25px;
+    width: 60%;
+    padding: 10px;
+  }
+  .clock{
+    margin: auto;
+    border-radius: 25px;
+    width: 80%;
+    background-color: #a3c0f5;
+    padding: .1em;
+    font-size: 3em;
+  }
+
+  button{
+      background-color: #001f4d;
+      border-radius: 25px;
+  }
+  
