@@ -1,0 +1,30 @@
+<div class="time-app text-white">
+    {{#if this.setTimeDate}}
+        <div class="add-pd-20">
+            <h2 class="display-4">Current Time</h2>
+            <p>{{this.current.hour}}:{{this.current.min}}:{{this.current.second}}:{{this.current.millisec}}</p>
+            <p>{{this.current.month}}-{{this.current.day}}-{{this.current.year}}</p>
+        </div>
+        <div class="add-pd-20">
+            <h2 class="display-4">Moscow, Russia Time Zone</h2>
+            <p>{{this.moscowRussia.hour}}:{{this.moscowRussia.min}}:{{this.moscowRussia.second}}:{{this.moscowRussia.millisec}}</p>
+            <p>{{this.moscowRussia.month}}-{{this.moscowRussia.day}}-{{this.moscowRussia.year}}</p>
+        </div>
+        {{!-- {{this.updateTime}} --}}
+    {{else}}
+        <div class="add-pd-20">
+            <h2 class="display-4">Current Time</h2>
+            <p>00:00:00:00</p>
+            <p>00-00-0000</p>
+        </div>
+        <div class="add-pd-20">
+            <h2 class="display-4">Moscow, Russia Time Zone</h2>
+            <p>00:00:00:00</p>
+            <p>00-00-0000</p>
+        </div>    
+    {{/if}}
+    
+    <div class="add-pd-50">
+        <button class="btn btn-lg btn-info" onclick={{action refreshTime}}>Refresh</button>
+    </div>
+</div>

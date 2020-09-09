@@ -1,0 +1,25 @@
+h1 {
+    color: #444;
+  }
+  
+  .main-glimmer-app {
+    padding: 50px;
+  }
+  
+  .time-app{
+    padding: 20px;
+  }
+  
+  .center-it{
+    text-align: center;
+  }
+
+  .add-pd-50{
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+
+  .add-pd-20{
+    padding-top: 20px;
+  }
+  
