@@ -11,12 +11,9 @@ export default class TimerTrackerComponent extends Component {
     @tracked year = null;
     @tracked hourForeign = null;
     @tracked timeZone = 6;
-    @tracked date = new Date().toLocaleString();
 
     textDisplayCurrent = 'Current Time New York, United States';
     textDisplayForeign = 'Current Time Berlin, Germany';
-
-    timeInterval = setInterval(this.refreshTime(),1000);
 
     constructor(){ 
         super(...arguments);
