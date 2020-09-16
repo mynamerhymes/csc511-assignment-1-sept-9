@@ -1,0 +1,21 @@
+.timer-tracker-app{
+    background-color: lightslategrey;
+    text-align: center;
+    color: snow;
+}
+
+p{
+color: snow;
+}
+
+h1{
+color: snow;
+}
+
+h2{
+color: snow;
+}
+
+.refreshButton{
+font-weight: bold;
+}
