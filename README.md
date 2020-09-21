@@ -1,7 +1,6 @@
 # assignment-1-final
 
-This README outlines the details of collaborating on this Ember application.
-A short introduction of this app could easily go here.
+This app tracks time of your local system and a city's (Moscow, Russia) time zone. App should display the hour, minute, second, millisecond, month, day, and year of the local's and Moscow's time zone. App will continuously the current time using @tracked and js built in DateTime functions. If the setInterval function fails, there is an included refresh function that will update the time when a button is clicked.
 
 ## Prerequisites
 
@@ -14,8 +13,8 @@ You will need the following things properly installed on your computer.
 
 ## Installation
 
-* `git clone <repository-url>` this repository
-* `cd assignment-1-final`
+* `git clone https://github.com/dsobolev98/csc511-assignment-1-sept-9` this repository
+* `cd csc511-assignment1-sept-9`
 * `npm install`
 
 ## Running / Development
