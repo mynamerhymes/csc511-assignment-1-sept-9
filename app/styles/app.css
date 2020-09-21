@@ -1,0 +1,20 @@
+.center{
+    text-align: center;
+    padding:150px 0px;
+}
+
+body{
+background-image: url("https://images.pexels.com/photos/1037992/pexels-photo-1037992.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260");
+background-repeat: no-repeat;
+background-attachment: fixed;
+background-position: center;
+}
+
+p.font{
+    font-size: 50px;
+    color:#16918b;
+}
+
+p b{
+    color:#fa618f;
+}
