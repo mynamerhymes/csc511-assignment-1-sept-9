@@ -1,14 +1,15 @@
-import Component, { tracked } from '@glimmer/component';
+import Component from '@glimmer/component';
+import { tracked } from '@glimmer/tracking';
 
 export default class DateTimeComponent extends Component {
     @tracked date;
     @tracked time;
     @tracked tz;
 
-    constructor(options) {
-        super(options);
-        this.getNewDate();
-    }
+    // constructor(options) {
+    //     super(options);
+    //     this.getNewDate();
+    // }
 
     async getNewDate() {
         let tzone1 = this.args.tzone1 || "America/New_York";
