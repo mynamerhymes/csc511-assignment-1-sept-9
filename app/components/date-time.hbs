@@ -1,0 +1,20 @@
+<div id="myDiv" class="bk-g">
+    <div class="curr-date">
+         <h1>Welcome to Glimmer!</h1>
+        <h4>The Current Date & Time</h4>
+        <div>
+            <h4>Date</h4>
+            <p>{{ date }} </p>
+
+            <h4>TimeZone: America.New_York</h4>
+            <p>{{ time }}</p>
+        </div>
+
+        <div>
+            <h4>TimeZone: Asia/Japan</h4>
+            <p>{{ tz }}</p>
+        </div>
+
+        <button class="refresh-btn" onclick={{action refresh}}>Refresh</button>
+    </div> 
+</div>
